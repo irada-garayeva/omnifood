@@ -496,6 +496,30 @@
   row-gap: 2.4rem;
 }
 
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  font-family: inherit;
+  font-size: 1.8rem;
+  width: 100%;
+  color: inherit;
+  border-radius: 9px;
+  padding: 1.2rem;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fdf2e9;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
 .cta-img-box {
   background-image: linear-gradient(
       to right bottom,
@@ -505,4 +529,9 @@
     url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
